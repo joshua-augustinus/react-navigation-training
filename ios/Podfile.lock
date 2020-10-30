@@ -87,15 +87,15 @@ PODS:
     - React
   - RNReanimated (1.13.1):
     - React
-  - RNScreens (2.12.0):
-    - React-Core
+  - RNScreens (2.11.0):
+    - React
   - yoga (0.60.6.React)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - React (from `../node_modules/react-native/`)
+  - React (from `../node_modules/react-native`)
   - React-Core (from `../node_modules/react-native/React`)
   - React-cxxreact (from `../node_modules/react-native/ReactCommon/cxxreact`)
   - React-DevSupport (from `../node_modules/react-native/React`)
@@ -131,7 +131,7 @@ EXTERNAL SOURCES:
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
-    :path: "../node_modules/react-native/"
+    :path: "../node_modules/react-native"
   React-Core:
     :path: "../node_modules/react-native/React"
   React-cxxreact:
@@ -203,9 +203,9 @@ SPEC CHECKSUMS:
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
   RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
-  RNScreens: 4b488fdf9537bbce829e2910c8cce1d17f6d9be8
+  RNScreens: 0e91da98ab26d5d04c7b59a9b6bd694124caf88c
   yoga: 5079887aa3e4c62142d6bcee493022643ee4d730
 
-PODFILE CHECKSUM: 29c88e1a8fc9770d5765aec63ff0df006b43d634
+PODFILE CHECKSUM: d2a92ab7ae733fe17a61003070cc31e1239598df
 
 COCOAPODS: 1.10.0
