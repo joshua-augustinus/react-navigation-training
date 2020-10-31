@@ -9,7 +9,7 @@
       "moduleResolution": "node",
       "noEmit": true,
       "strict": false,
-      "noImplicitAny": true,
+      "noImplicitAny": false,
       "target": "esnext",
       "skipLibCheck": true,
   
