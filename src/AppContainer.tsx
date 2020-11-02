@@ -11,7 +11,7 @@ import { BackContainer } from './comopnents/BackContainer';
  * https://reactnavigation.org/docs/4.x/typescript
  */
 type Props = {
-    navigation: NavigationStackProp<{}>;
+    navigation: NavigationStackProp<{ userId: string }>;
 }
 
 class HomeScreen extends React.Component<Props> {
@@ -21,7 +21,7 @@ class HomeScreen extends React.Component<Props> {
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                    <TouchableOpacity onPress={() => { this.props.navigation.navigate("SecondScreen") }}>
+                    <TouchableOpacity onPress={() => { this.props.navigation.navigate("SecondScreen", { userId: '1234' }) }}>
                         <Text>Home Screen</Text>
                     </TouchableOpacity>
 
@@ -32,14 +32,14 @@ class HomeScreen extends React.Component<Props> {
     }
 }
 
-class SecondScreen extends React.Component<Props>{
-    render() {
-        return (
-            <SafeAreaView style={{ flex: 1 }}>
-                <BackContainer navigation={this.props.navigation} />
-            </SafeAreaView>
-        )
-    }
+const SecondScreen = (props: Props) => {
+    const userId = props.navigation.getParam('userId', 'defaultUserId');
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+            <Text>{userId}</Text>
+            <BackContainer navigation={props.navigation} />
+        </SafeAreaView>
+    )
 }
 
 const RootStack = createStackNavigator({
