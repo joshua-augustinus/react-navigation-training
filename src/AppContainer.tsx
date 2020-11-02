@@ -10,8 +10,8 @@ import { BackContainer } from './comopnents/BackContainer';
 /**
  * https://reactnavigation.org/docs/4.x/typescript
  */
-type Props={
-    navigation:NavigationStackProp<{}>;
+type Props = {
+    navigation: NavigationStackProp<{}>;
 }
 
 class HomeScreen extends React.Component<Props> {
@@ -33,10 +33,10 @@ class HomeScreen extends React.Component<Props> {
 }
 
 class SecondScreen extends React.Component<Props>{
-    render(){
-        return(
+    render() {
+        return (
             <SafeAreaView style={{ flex: 1 }}>
-                <BackContainer navigation={this.props.navigation}/>
+                <BackContainer navigation={this.props.navigation} />
             </SafeAreaView>
         )
     }
@@ -49,9 +49,9 @@ const RootStack = createStackNavigator({
             return getNavigationOptions(navigation);
         }
     },
-    SecondScreen:{
-        screen:SecondScreen,
-        navigationOptions:({navigation})=>{
+    SecondScreen: {
+        screen: SecondScreen,
+        navigationOptions: ({ navigation }) => {
             return getEmptyNavigationOptions(navigation);
         }
     }

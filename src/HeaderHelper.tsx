@@ -29,9 +29,9 @@ export const getNavigationOptions = (navigation): NavigationOptions => {
     };
 }
 
-export const getEmptyNavigationOptions=(navigation)=>{
+export const getEmptyNavigationOptions = (navigation) => {
     return {
-        headerShown:false
+        headerShown: false
     }
 }
 
